@@ -1,4 +1,6 @@
 spring:
+  profiles:
+    include: mail
   datasource:
     url: jdbc:mariadb://localhost:3306/minicampus
     driver-class-name: org.mariadb.jdbc.Driver
@@ -14,8 +16,6 @@ spring:
   mail:
     host: smtp.gmail.com
     port: 587
-    username: mail@gmail.com
-    password: code
     properties:
       mail:
         smtp:
@@ -31,4 +31,3 @@ mybatis:
   configuration:
     map-underscore-to-camel-case: true
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
-

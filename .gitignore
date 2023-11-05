@@ -44,4 +44,7 @@ build/
 /files/
 
 /documents/
-/result.json
+result.json
+
+**/.DS_Store
+

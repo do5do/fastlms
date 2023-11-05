@@ -1,7 +1,6 @@
 package com.zerobase.fastlms.configuration;
 
 import com.zerobase.fastlms.member.service.LoginHistoryService;
-import com.zerobase.fastlms.member.service.impl.LoginHistoryServiceImpl;
 import com.zerobase.fastlms.util.RequestUtils;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

@@ -1,7 +1,6 @@
 package com.zerobase.fastlms.member.service;
 
 import com.zerobase.fastlms.admin.dto.LoginHistoryDto;
-import com.zerobase.fastlms.member.entity.LoginHistory;
 
 import java.util.List;
 

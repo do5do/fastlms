@@ -12,15 +12,16 @@ public class RequestUtils {
 
     public static String getClientIp(HttpServletRequest request) {
         String ip = null;
-
         for (Headers header : Headers.values()) {
             ip = request.getHeader(header.getValue());
+            if (ip != null) {
+                break;
+            }
         }
 
         if (ip == null) {
             ip = request.getRemoteAddr();
         }
-
         return ip;
     }
 }

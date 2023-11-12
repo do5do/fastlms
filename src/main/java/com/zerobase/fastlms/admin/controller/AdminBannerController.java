@@ -55,7 +55,7 @@ public class AdminBannerController extends BaseController {
         if (editMode) {
             BannerDto existsBanner = bannerService.findById(parameter.getId());
             if (existsBanner == null) {
-                model.addAttribute("message", "강좌정보가 존재하지 않습니다.");
+                model.addAttribute("message", "배너정보가 존재하지 않습니다.");
                 return "common/error";
             }
             detail = existsBanner;
